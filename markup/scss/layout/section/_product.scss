@@ -1,0 +1,57 @@
+.products{
+	// position: relative;
+	// &:after{
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	background-image: url(./images/img010.jpg);
+	// 	background-size: cover;
+	// 	opacity: .1;
+	// }
+	// .container{
+	// 	position: relative;
+	// 	z-index: 2;
+	// }
+}
+
+.table_container{
+	table{
+		margin: 70px auto;
+		border: none;
+		font-size: 20px;
+		font-weight: 500;
+	}
+s
+	thead{
+		background-color: $yellow;
+		th{
+			padding: 20px 15px;
+		}
+	}
+	
+	tbody{
+		td{
+			padding: 20px 15px;
+		}
+	}
+
+
+	tr{
+		&:nth-child(even){
+			background-color: rgba(255, 202, 40, .3);
+		}
+	}
+	td {
+		text-align: center;
+		border-color: transparent;
+	}
+
+	th{
+		text-align: center;
+		color: $white;
+		border: 1px solid $white; 
+	}
+}
