@@ -1,0 +1,10 @@
+.about{
+	.text_container{
+		@include media(">=tablet") {
+			display: flex;
+		}
+		.col{
+			flex: 1;
+		}
+	}
+}
