@@ -1,0 +1,120 @@
+.about{
+	height: 100vh;
+}
+.row{
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.col{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.container{
+	padding: 0 15px;
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+section{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	@include media(">=tablet") {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@include media(">=desktop") {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	}
+}
+
+
+.btn {
+	@extend %transition;
+	font-weight: 700;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	background-color: $yellow;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	color: $white;
+	&:hover{
+		color: $black;
+		&:after{
+			width: 130%;
+			opacity: 1;
+		}
+	}
+	&:active,
+	&:focus{
+		outline: 1px solid $yellow;
+	}
+	&:after{
+		content: "";
+		transition: .4s;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		background-color: $white;
+		width: 0;
+		transform: skew(-50deg) translatex(-50%);
+		opacity: 0;
+		z-index: 1;
+	}
+	span{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.title {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 50px;
+	position: relative;
+	h2 {
+	text-transform: uppercase;
+	color: $yellow;
+	}
+}
+
+
+.line{
+	transform: skew(-40deg);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: -300px;
+	transform: skew(-40deg);
+	li{
+		background-color: $yellow;
+		height: 100%;
+		display: inline-block;
+		margin-right: 5px;
+		&:nth-child(1){
+			width: px;
+		}
+		&:nth-child(2){
+			width: 30px;
+		}
+		&:nth-child(3){
+			width: 150px;
+		}
+		&:nth-child(4){
+			width: 20px;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.grid-item {
+    width: 24.5%;
+}
