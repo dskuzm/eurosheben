@@ -1,5 +1,6 @@
 header {
     @include animate(background padding box-shadow);
+    box-shadow: 0px 12px 32px -8px rgba(0,0,0,0.2);
     // padding: 10px 0;
     position: fixed;
     width: 100%;

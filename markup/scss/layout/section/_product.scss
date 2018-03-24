@@ -19,12 +19,12 @@
 
 .table_container{
 	table{
-		margin: 70px auto;
+		margin: 40px auto;
 		border: none;
 		font-size: 20px;
 		font-weight: 500;
 	}
-s
+
 	thead{
 		background-color: $yellow;
 		th{
@@ -35,15 +35,20 @@ s
 	tbody{
 		td{
 			padding: 20px 15px;
+			border: 1px solid #ffffff;
 		}
-	}
-
-
-	tr{
+		tr{
 		&:nth-child(even){
 			background-color: rgba(255, 202, 40, .3);
 		}
+		&:nth-child(odd){
+			background-color: rgba(208, 157, 3, .3);
+		}
 	}
+	}
+
+
+	
 	td {
 		text-align: center;
 		border-color: transparent;

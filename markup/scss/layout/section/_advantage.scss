@@ -3,6 +3,8 @@
 	position: relative;
 	.row{
 		@include media(">=tablet") {
+			max-width: 70%;
+			margin:  auto;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
@@ -10,15 +12,15 @@
 	}
 
 	.col{
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		margin-right: 5px;
 		margin-left: 5px;
-		padding: 0;
-		border: 1px solid $yellow;
-		// border: 1px dashed $yellow;
-		padding: 30px;
+		padding: 10px;
+		overflow: hidden;
+		position: relative;
+		color: #fff;
 
-		transform: skew(10deg);
+		// transform: skew(10deg);
 		// &:nth-child(1),
 		// &:nth-child(2){
 		// 	transform: skew(5deg);
@@ -37,12 +39,38 @@
 
 		@include media(">=tablet") {
 			width: 50%;
-			width: 22%;
+			// width: 22%;
+		}
+		&:nth-child(even) {
+			transform: translateX(100%);
 		}
 
-		.holder{
-			transform: skew(-10deg);
+		&:before{
+	    	content: "";
+	    	border: 10px dashed red;
+	    	width: 50%;
+	    	height: 50%;
+	    	display: block;
+	    	transform: skew(-50deg);
+	    	border-bottom: none;
+	    	border-left: none;
 		}
+		&:after{
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 50%;
+	    background-color: #ffca28;
+	    width: 120%;
+	    transform: skew(-50deg) translatex(-50%);
+	    // opacity: 0;
+	    z-index: -1;
+		}
+
+		// .holder{
+		// 	transform: skew(-10deg);
+		// }
 		.description{
 			max-width: 70%;
 			margin: 0 auto;
