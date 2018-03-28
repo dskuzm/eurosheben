@@ -1946,10 +1946,11 @@ header {
   z-index: 999;
   background-color: #ffffff; }
   header.fixed-position {
-    background: #fff;
-    border-bottom: 1px solid #ffca28; }
+    background: #fff; }
     header.fixed-position .logo-holder {
       max-width: 40px; }
+    header.fixed-position .header-nav {
+      top: 51px; }
     header.fixed-position .header-nav li a {
       padding: 17px 25px; }
   header .container {
@@ -2023,11 +2024,11 @@ header {
     header .header-nav li {
       font-weight: 500;
       letter-spacing: 0.014em;
-      margin-bottom: 25px;
       display: block;
       overflow: hidden; }
       @media (min-width: 768px) {
         header .header-nav li {
+          margin-bottom: 25px;
           margin-bottom: 0;
           display: inline-block; } }
       header .header-nav li:last-child {
@@ -2371,6 +2372,27 @@ section {
   text-align: center;
   color: #fff;
   border: 1px solid #fff; }
+
+.btn-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.downl-btn {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  margin: 0 auto; }
+  .downl-btn:hover {
+    color: #ffca28; }
+  .downl-btn:active, .downl-btn:focus {
+    color: #ffca28; }
+  .downl-btn img {
+    margin-left: 10px;
+    max-width: 20px; }
 
 .advantage {
   text-align: center;
