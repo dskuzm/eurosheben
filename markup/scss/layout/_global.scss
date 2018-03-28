@@ -13,6 +13,8 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	width: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 main {
@@ -136,15 +138,18 @@ section{
 // }
 
 .first-holder {
+	transition: left .9s;
+	// opacity: 0;
 	z-index: 1;
 	position: absolute;
 	width: 570px;
 	height: 400px;
 	transform: skew(-50deg);
 	overflow: hidden;
-	left: -9%;
-	top: -20%;
+	left: -57%;
+	top: -7%;
 	.holder {
+		@include animate(transform);
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -155,13 +160,14 @@ section{
 }
 
 .second-holder {
+	transition: right .9s;
 	z-index: 1;
 	position: absolute;
 	width: 470px;
 	height: 400px;
 	transform: skew(-50deg);
 	overflow: hidden;
-	right: -9%;
+	right: -54%;
 	bottom: 0;
 	.holder {
 		width: 100%;
@@ -174,13 +180,14 @@ section{
 }
 
 .third-holder {
+	transition: right .9s;
 	z-index: 1;
 	position: absolute;
 	width: 470px;
 	height: 300px;
 	transform: skew(-50deg);
 	overflow: hidden;
-	right: 3%;
+	right: -56%;
 	bottom: 0;
 	.holder {
 		width: 100%;
@@ -189,5 +196,17 @@ section{
 		background-repeat: no-repeat;
 		opacity: .2;
 		transform: skew(50deg);
+	}
+}
+.in-viewport {
+	.first-holder {
+		// opacity: 1;
+		left: -9%;
+	}
+	.second-holder {
+		right: -9%;
+	}
+	.third-holder {
+		right: 3%;
 	}
 }
