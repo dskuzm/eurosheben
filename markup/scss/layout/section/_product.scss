@@ -60,3 +60,23 @@
 		border: 1px solid $white; 
 	}
 }
+.btn-holder {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+.downl-btn {
+	@include animate(color);
+	margin: 0 auto;
+	&:hover {
+		color: $yellow;
+	}
+	&:active,
+	&:focus {
+		color: $yellow;
+	}
+	img{
+		margin-left: 10px;
+		max-width: 20px;
+	}
+}
