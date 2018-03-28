@@ -198,6 +198,13 @@ section{
 		transform: skew(50deg);
 	}
 }
+
+.image-holder {
+	display: none;
+	@include media(">=tablet") {
+		display: block;
+	}
+}
 .in-viewport {
 	.first-holder {
 		// opacity: 1;
