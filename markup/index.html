@@ -15,6 +15,7 @@
 		<div class="container">
 			<a href="#" class="logo-holder">
 				<img class="logo" src="images/logo.jpg" alt="image description">
+				<span></span>
 			</a>
 			<div class="nav-icon">
 				<div class="nav-icon-item icon-item-top"></div>
@@ -159,12 +160,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <ul class="line listreset">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul> -->
 		</section>
 
 		<section id="products" class="products">
@@ -220,15 +215,31 @@
 							</tr>
 						</tbody>
 					</table>
+					<span class="btn-holder">
+						<a class="downl-btn" href="price.doc" download>Скачать прайс <img src="images/download.svg" alt="image description"></a>
+					</span>
+				</div>
+			</div>
+			<div class="first-holder">
+				<div class="holder" style="background-image: url(images/img012.jpg)">
+					
+					<!-- <img src="images/img011.jpg" alt="image description"> -->
+				</div>
+			</div>
+			<div class="second-holder">
+				<div class="holder" style="background-image: url(images/img011.jpg)">
+					
+					<!-- <img src="images/img011.jpg" alt="image description"> -->
 				</div>
 			</div>
 		</section>
+
 		<section id="gallery">
+			<div class="container">
 			<div class="title">
 				<h2>Галерея</h2>
 				<p>Фото нашего карьера</p>
 			</div>
-			<div class="container">
 				<div id="unitGallery" class="gallery_container">
 					<img alt="image-description"
 						 src="images/img02.jpg"
@@ -261,7 +272,7 @@
 			</div>
 		</section>
 
-		<section id="about" class="about">
+		<section id="about" class="about bg-stripe">
 			<div class="container">
 				<div class="title">
 					<h2>О нас</h2>
@@ -279,8 +290,78 @@
 					</div>
 				</div>
 			</div>
+			<div class="third-holder">
+				<div class="holder" style="background-image: url(images/img013.jpg)">
+					
+					<!-- <img src="images/img011.jpg" alt="image description"> -->
+				</div>
+			</div>
 		</section>
 
 	</main>
+
+		<footer class="footer">
+			<div class="container">
+				<h4>Контакти</h4>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col">
+								<ul class="listreset">
+									<li><a href="#">+38 097 567 76 34</a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="col">
+						
+
+						<form class="contact_form" action="contact-form.php" method="post">
+							<p>
+								<!-- <label for="name">Имя:</label> -->
+								<input type="text"  name="name" placeholder="Введите ваше имя" required />
+							</p>
+							<p>
+								<!-- <label for="email">Email:</label> -->
+								<input type="email" name="email" placeholder="Введите электронный адрес" required />
+								<!-- <span class="form_hint">Правильный формат "name@something.com"</span> -->
+							</p>
+							<p>
+								<!-- <label for="tel">Телефон:</label> -->
+								<input type="tel" name="tel" placeholder="Введите номер телефона" required />
+								<!-- <span class="form_hint">Правильный формат "+7-123-4567890"</span> -->
+							</p>
+							<!-- <p>
+								<label for="website">Сайт:</label>
+								<input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+								<span class="form_hint">Правильный формат "http://someaddress.com"</span>
+							</p> -->
+							<p>
+								<!-- <label for="message">Текст сообщения:</label> -->
+								<textarea name="message" cols="40" rows="6" required ></textarea>
+							</p>
+								<input name="bezspama" type="text" style="display:none" value="" />
+							<p>
+								<button class="submit" type="submit">Отправить сообщение</button>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
 </body>
 </html>

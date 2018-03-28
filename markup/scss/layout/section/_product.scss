@@ -1,20 +1,9 @@
 .products{
-	// position: relative;
-	// &:after{
-	// 	content: "";
-	// 	position: absolute;
-	// 	top: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	background-image: url(./images/img010.jpg);
-	// 	background-size: cover;
-	// 	opacity: .1;
-	// }
-	// .container{
-	// 	position: relative;
-	// 	z-index: 2;
-	// }
+	position: relative;
+	.container {
+		position: relative;
+		z-index: 2;
+	}
 }
 
 .table_container{
@@ -23,6 +12,7 @@
 		border: none;
 		font-size: 20px;
 		font-weight: 500;
+		margin-bottom: 0;
 	}
 
 	thead{
@@ -39,10 +29,10 @@
 		}
 		tr{
 		&:nth-child(even){
-			background-color: rgba(255, 202, 40, .3);
+			background-color: #ffefbf;
 		}
 		&:nth-child(odd){
-			background-color: rgba(208, 157, 3, .3);
+			background-color: #f2e1b5;
 		}
 	}
 	}
@@ -58,5 +48,25 @@
 		text-align: center;
 		color: $white;
 		border: 1px solid $white; 
+	}
+}
+.btn-holder {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+.downl-btn {
+	@include animate(color);
+	margin: 0 auto;
+	&:hover {
+		color: $yellow;
+	}
+	&:active,
+	&:focus {
+		color: $yellow;
+	}
+	img{
+		margin-left: 10px;
+		max-width: 20px;
 	}
 }
