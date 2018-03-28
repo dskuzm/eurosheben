@@ -31,14 +31,14 @@ $base-link-color: $black;
 // Buttons 
 $btn-color: $white !default;
 $btn-background: $black !default;
-$btn-padding: 0.4em 0.7em !default;
+$btn-padding: 0.6em 0.9em ;
 $btn-font-size: inherit !default;
 
 // Forms
 $form-element-padding: $btn-padding !default;
-$form-element-border-color: $gray !default;
-$form-element-focus-border-color: $black !default;
-$placeholder-color: $gray !default;
+$form-element-border-color: $white;
+$form-element-focus-border-color: $yellow;
+$placeholder-color: $white;
 
 // Headers
 $h1-font-size: 35px;

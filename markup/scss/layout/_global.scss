@@ -1,6 +1,3 @@
-.about{
-	height: 100vh;
-}
 .row{
 	margin-right: -15px;
 	margin-left: -15px;
@@ -18,15 +15,18 @@
 	width: 100%;
 }
 
+main {
+	overflow: hidden;
+}
 section{
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	@include media(">=tablet") {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		@include media(">=desktop") {
-			padding-top: 70px;
-			padding-bottom: 70px;
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 	}
 }
@@ -117,4 +117,77 @@ section{
 
 .grid-item {
     width: 24.5%;
+}
+
+// .bg-stripe {
+// 	position: relative;
+// 	&:after {
+// 		position: absolute;
+// 		display: block;
+// 		content: "";
+// 		height: 80px;
+// 		// width: 100%;
+// 		width: 40px;
+// 		height: 200%;
+// 		bottom: 0;
+// 		background-color: $black;
+// 		background-image: repeating-linear-gradient(50deg, rgba($yellow, 1), rgba($yellow, 1) 60px, transparent 0, transparent 120px)
+// 	}
+// }
+
+.first-holder {
+	z-index: 1;
+	position: absolute;
+	width: 570px;
+	height: 400px;
+	transform: skew(-50deg);
+	overflow: hidden;
+	left: -9%;
+	top: -20%;
+	.holder {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: .2;
+		transform: skew(50deg);
+	}
+}
+
+.second-holder {
+	z-index: 1;
+	position: absolute;
+	width: 470px;
+	height: 400px;
+	transform: skew(-50deg);
+	overflow: hidden;
+	right: -9%;
+	bottom: 0;
+	.holder {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: .2;
+		transform: skew(50deg);
+	}
+}
+
+.third-holder {
+	z-index: 1;
+	position: absolute;
+	width: 470px;
+	height: 300px;
+	transform: skew(-50deg);
+	overflow: hidden;
+	right: 3%;
+	bottom: 0;
+	.holder {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: .2;
+		transform: skew(50deg);
+	}
 }

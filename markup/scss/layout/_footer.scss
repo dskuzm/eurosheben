@@ -1,0 +1,15 @@
+.footer {
+	background-color: $black;
+	padding: 20px 0;
+	color: #fff;
+	.row {
+		display: flex;
+		justify-content: space-between;
+	}
+	a{
+		color: #fff;
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
